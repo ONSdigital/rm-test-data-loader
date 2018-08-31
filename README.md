@@ -1,7 +1,9 @@
 # Response Management Test Data Loader
 This repository contains test data and documents the cURL requests for loading it into Response Management.
 
-## Upload Social Sample File
+## Upload Social Survey Sample File
+Run `./uploadsamplefile.sh` which performs this cURL request:
+
 ```
 curl -i -X POST \
   http://samplesvc/samples/SOCIAL/fileupload \
@@ -11,7 +13,9 @@ curl -i -X POST \
   -F file=@./Social_Pilot_Sample.csv
  ```
 
- ## Find Sample Summaries
+ ## Get Sample Summaries
+ Run `./getsamplesummaries.sh` which performs this cURL request:
+
  ```
  curl -i -X GET \
   http://samplesvc/samples/samplesummaries \
